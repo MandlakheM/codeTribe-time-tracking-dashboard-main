@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="person">
+        <div class="person-content">
+          <img id="profile-pic" src="images/image-jeremy.png" alt="" />
+          <ul id="nameDisplay">
+            <li>Report For</li>
+            <li id="name"></li>
+          </ul>
+        </div>
+        <ul>
+          <li><a id="daily" href="#">Daily</a></li>
+          <li><a id="weekly" href="#">Weekly</a></li>
+          <li><a id="monthly" href="#">Monthly</a></li>
+        </ul>
+      </div>
+      <div class="work">
+        <div class="work-content">
+          <div class="heading">
+            <h6><strong>Work </strong></h6>
+            <a href="#"><img src="images/icon-ellipsis.svg" alt="" /></a>
+          </div>
+          <h4 id="work-current"></h4>
+          <h5 id="work-previous"></h5>
+        </div>
+      </div>
+      <div class="play">
+        <div class="play-content">
+          <div class="heading">
+            <h6><strong>Play </strong></h6>
+            <a href="#"><img src="images/icon-ellipsis.svg" alt="" /></a>
+          </div>
+          <h4 id="play-current"></h4>
+          <h5 id="play-previous"></h5>
+        </div>
+      </div>
+      <div class="study">
+        <div class="study-content">
+          <div class="heading">
+            <h6><strong>Study </strong></h6>
+            <a href="#"><img src="images/icon-ellipsis.svg" alt="" /></a>
+          </div>
+          <h4 id="study-current"></h4>
+          <h5 id="study-previous"></h5>
+        </div>
+      </div>
+      <div class="exercise">
+        <div class="exercise-content">
+          <div class="heading">
+            <h6><strong>Exercise</strong></h6>
+            <a href="#"
+              ><img
+                src="images/icon-ellipsis.svg"
+                alt=""
+                style="padding-right: 3rem"
+            /></a>
+          </div>
+          <h4 id="exercise-current"></h4>
+          <h5 id="exercise-previous"></h5>
+        </div>
+      </div>
+      <div class="social">
+        <div class="social-content">
+          <div class="heading">
+            <h6><strong>Social </strong></h6>
+            <a href="#"><img src="images/icon-ellipsis.svg" alt="" /></a>
+          </div>
+          <h4 id="social-current"></h4>
+          <h5 id="social-previous"></h5>
+        </div>
+      </div>
+      <div class="selfCare">
+        <div class="selfCare-content">
+          <div class="heading">
+            <h6><strong>Self Care</strong></h6>
+            <a href="#"><img src="images/icon-ellipsis.svg" alt="" /></a>
+          </div>
+          <h4 id="self-current">2hrs</h4>
+          <h5 id="self-previous">Last Week-2hrs</h5>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <div class="attribution">
+      Bootcamp 2023 by
+      <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>. Developed
+      by <a href="#">MANDILAKHE MANGUMTA</a>.
+    </div>
+  </body>
+</html>

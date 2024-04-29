@@ -1,0 +1,174 @@
+body {
+  background: hsl(226, 43%, 10%);
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px;
+  justify-content: center;
+  gap: 2rem;
+  padding: 50px;
+}
+
+.person {
+  grid-row: span 2;
+  border-radius: 10%;
+  background-color: hsl(235, 46%, 20%);
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+  border-radius: 10%;
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+  border-radius: 10%;
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+  border-radius: 10%;
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+  border-radius: 10%;
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+  border-radius: 10%;
+}
+
+.selfCare {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+  border-radius: 10%;
+}
+
+.person-content {
+  background-color: hsl(246, 80%, 60%);
+  height: 350px;
+  position: relative;
+  border-radius: 10%;
+}
+
+.work-content,
+.play-content,
+.study-content,
+.exercise-content,
+.social-content,
+.selfCare-content {
+  background-color: hsl(235, 46%, 20%);
+  height: 200px;
+  position: relative;
+  top: 50px;
+  border-radius: 10%;
+}
+
+#profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  border: 3px solid white;
+}
+
+ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li,
+a {
+  padding: 1rem;
+  color: hsl(236, 100%, 87%);
+}
+
+a:hover {
+    color:white;
+  }
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  margin-left: 1.5rem;
+  height: 70px;
+}
+h6 {
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#scm {
+  justify-content: end;
+  padding-right: 3rem;
+}
+
+#nameDisplay {
+  padding-top: 2rem;
+}
+
+#name {
+  font-size: 2rem;
+  color: white;
+}
+
+#work-current,
+#play-current,
+#study-current,
+#exercise-current,
+#social-current,
+#self-current {
+  margin: 0;
+  margin-left: 1.5rem;
+  font-size: 3rem;
+  color: white;
+  font-weight: 300;
+}
+
+#work-previous,
+#play-previous,
+#study-previous,
+#exercise-previous,
+#social-previous,
+#self-previous {
+  margin-top: 20px;
+  margin-left: 1.5rem;
+  color: hsl(236, 100%, 87%);
+}
+
+.attribution{
+  text-align: center;
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .person ul{
+      display: flex;
+      padding: 0.1rem;
+  }
+  
+  .work, .play, .study, .exercise, .social, .selfCare {
+    width: 300px;
+    margin: 50px auto;
+  }
+}
